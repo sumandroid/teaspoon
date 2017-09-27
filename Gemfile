@@ -5,6 +5,12 @@ gem "sprockets", ">= 4.0.0.beta2"
 
 gemspec name: "teaspoon"
 
+#gem for coffee-script compilations, it will solve the coffee_script not found error
+group :assets do
+  gem 'coffee-rails'
+end
+
+
 group :development, :test do
   gemspec name: "teaspoon-devkit"
 
